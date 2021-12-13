@@ -1,0 +1,28 @@
+# This file should be put in '/lib/systemd/system' or similar directory
+# Load the file by notifying systemd daemon with 'sudo systemctl daemon-reload'
+# Run it with 'sudo systemctl start doitright'
+# Stop it with 'sudo systemctl stop doitright'
+# Restart with 'sudo systemctl restart doitright'
+# Check its status as 'sudo systemctl status doitright'
+# Set it to automatically start when the system reboots with 'sudo systemctl enable doitright'
+# Stop it from automatically starting on system reboots with 'sudo systemctl disable doitright'
+[Unit]
+Description=DoitRight-Metrics-Collectors
+Documentation=https://www.pinimbus.com
+Wants=network-online.target
+After=network.target
+
+[Service]
+Type=simple
+RuntimeDirectory=Collectors
+Environment=NODE_ENV=production
+ExecStart=/home/ec2-user/.nvm/versions/node/v14.18.2/bin/node build/scheduler.js
+Restart=always
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/doitright/Collectors
+Restart=on-failure
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
