@@ -1,0 +1,101 @@
+<p>
+In order to calculate metrics for a team and its service components and sub-components,
+you will need to attach and configure collectors for the systems that are used by that 
+team/service component/service sub-component.
+<br/>
+This help page will tell you how the collectors work and how it should be attached and configured.
+</br>
+It is recommended that you read this entire help and make sure you understand it properly before 
+going ahead with the configuration.
+</p>
+
+<p>
+To get data for the metrics calculation at the service sub-component level, collectors needs 
+to be attached at the service sub-component level. Although collectors can also be attached at 
+the service component and at team level too. But in these later cases data will be mapped and 
+metrics calculated at the service component and team level respectively.
+</p>
+
+<p>
+The following collectors are required for the various DORA metrics at any level (service sub-component/service component/team):
+<br/>
+<b>Deployment Frequency</b> - At least one collector listed under cicd.<br/>
+<b>Lead Time for Changes</b> - At least one collector listed under cicd + At least one collector listed under repository.<br/>
+<b>Mean Time to Restore</b> - At least one collector listed under incident.<br/>
+<b>Change Failure Rate</b> - At least one collector listed under incident + At least one collector listed under cicd.<br/>
+<br/>
+A single collector at a level will pull data for all the metrics requiring that collector. 
+For example, configuring one cicd collector at a service sub-component level will pull data 
+to calculate Deployment Frequency, Lead Time for Changes and Change Failure Rate at that level.
+<br/>
+Metrics at a higher level is an aggregation of all the levels below it. So, if you configure 
+the collectors at the service sub-component level of a service component, the metrics of the 
+service component will be calculated from the data pulled for its corresponding service sub-components. 
+You SHOULD NOT configure collectors for the service component seperately if you have configured the 
+collectors for its constituent sub-components.
+</p>
+
+<p>
+Steps to attach collectors:
+<br/>
+<ol>
+<li>
+In the left hand side Team and Services area, select the service sub-component to which you wish to 
+attach the collectors. (You may select the service component or team also to attach at a different level).
+</li>
+<li>
+On the right hand side area, click the 'Add collectors' button and click the type of system to see the 
+available collectors.
+</li>
+<li>
+Click the collector that you wish to attach. The name of the collector tells you the system that it 
+will connect to.
+</li>
+<li>
+This will add a collector configuration box. Click on the box to expand and configure the collector.
+</li>
+<li>
+The default configuration used by your organization for the system is prefilled in the configuration 
+box, in case your administrator has configured the defaults.
+</li>
+<li>
+Fill in the url and authorization information for the system or change the default values already filled.
+</li>
+<li>
+Click the 'Connect to Server' button to test the url and authorization information and get the complete 
+list of options available to fill in the remaining fields in the configuration box.
+</li>
+<li>
+Choose or type in the appropriate values of all the remaining fields as applicable for the selected 
+service sub-component/service component/team. Alternatively you can opt to retain the defaults if 
+they are set.
+</li>
+<li>
+The explaination about what each of the fields mean are given just below each field. In case of any 
+confusion, refer to the detailed help on wiki or contact your system administrator.
+</li>
+<li>
+Click on the header of the configuration box to collapse the box.
+</li>
+<li>
+You can remove a wrongly attached collector by clicking on the cross icon on the header of the 
+collector's configuration box.
+</li>
+<li>
+You can temporarily pause the attached collector from collecting data by deselecting the enable 
+checkbox on the header of the collector's configuration box. Select the enable checkbox to resume 
+collecting data.
+</li>
+<li>
+Once you have attached and configured all the required collectors for the team and it's various 
+services, click on the SAVE button below the Team and Services area to save the entire collection 
+of collectors configurations.<br/>
+<b>IMPORTANT:</b> Remember to click SAVE button to persist the changes made.
+</li>
+</ol>
+</p>
+
+<p>
+To modify, select the required service sub-component/service component/team, expand the collector 
+configuration box and make your changes, and click SAVE button.
+</p>

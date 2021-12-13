@@ -1,0 +1,1 @@
+export type FetchAction = 'initial' | 'start' | 'success' | 'fail';

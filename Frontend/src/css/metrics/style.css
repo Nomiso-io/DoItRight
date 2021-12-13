@@ -1,0 +1,181 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  height: 1rem !important;
+}
+
+.toolbar {
+  padding: 5px !important;
+}
+
+button:active {
+  background-color: #6b9fff !important;
+}
+
+.selected {
+  background-color: #3379ff;
+  color: #ffffff;
+  font-weight: 500;
+  border: 1px solid #818181;
+  padding: 3px 5px;
+  margin-left: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.durationBtn {
+  background-color: #ffffff;
+  border: 1px solid #818181;
+  font-weight: 500;
+  padding: 3px 5px;
+  margin-left: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.react-daterange-picker {
+  position: absolute !important;
+  height: 23px !important;
+  border-bottom: none !important;
+}
+
+.react-daterange-picker__inputGroup {
+  margin-bottom: 28px !important;
+}
+
+.MuiTableCell-sizeSmall {
+  padding: 6px 12px 6px 12px !important;
+}
+
+.MuiTableSortLabel-icon {
+  opacity: 0.7 !important;
+  color: white !important;
+}
+
+.class1 {
+  font-size: small;
+}
+
+.apexcharts-tooltip {
+  background-color: #f3f3f3 !important;
+  color: #000000 !important;
+}
+
+.chartArea {
+  height: 313px;
+}
+
+.levelEliteColor {
+  color: #02692d;
+}
+
+.levelHighColor {
+  color: #6ad151;
+}
+
+.levelMediumColor {
+  color: #fc9929;
+}
+
+.levelLowColor {
+  color: #ff0000;
+}
+
+.levelNAColor {
+  color: #6e6e6e;
+}
+
+.countText {
+  color: #076ff7;
+}
+
+.doraSubTitles {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.infoIconStyle {
+  font-size: 34 !important;
+  margin-top: 5px !important;
+  position: absolute !important;
+}
+
+.tooltipTitleStyle {
+  font-size: 12px !important;
+}
+
+.MuiAutocomplete-input {
+  padding: 0px 4px !important;
+  height: 2rem !important;
+  border-bottom: none !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+.MuiAutocomplete-inputRoot {
+  padding-bottom: 1px !important;
+  padding-top: 1px !important;
+  background-color: #ffffff !important;
+}
+
+.MuiChip-root {
+  height: 24px !important;
+}
+
+.MuiChip-deleteIcon {
+  height: 18px !important;
+  width: 18px !important;
+}
+
+.MuiAutocomplete-root fieldset {
+  border-color: #000000 !important;
+}
+
+.apexcharts-tooltip {
+  background-color: #f3f3f3 !important;
+  color: #000000 !important;
+}
+
+.loaderStyle {
+  margin-top: 50px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.tableHeadMetrics {
+  background-color: #3cb1dc !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  border-radius: 0px !important;
+  cursor: pointer !important;
+  line-height: 1.2 !important;
+}
+
+.subTitleMetricStyle {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.apexcharts-legend-marker {
+  top: 1px !important;
+}
