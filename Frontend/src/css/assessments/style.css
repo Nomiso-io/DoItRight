@@ -1,0 +1,100 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.infoIconStyle {
+  font-size: 34 !important;
+  margin-top: 5px !important;
+  position: absolute !important;
+}
+
+.tooltipTitleStyle {
+  font-size: 12px !important;
+}
+
+.loaderStyle {
+  margin-top: 50px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.bottomButtonsContainer {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.textFieldStyle {
+  border-bottom: none !important;
+  box-shadow: none !important;
+} /* admin page */
+
+.numberInput {
+  margin-top: -14px !important;
+}
+
+.dropdownWidth {
+  min-width: 100% !important;
+}
+
+.table {
+  min-width: 650 !important;
+}
+
+.tableCell {
+  border-radius: 0px !important;
+  padding: 7px 14px !important;
+}
+
+.tableHead {
+  background-color: #3cb1dc !important;
+}
+
+.tableHeadText {
+  color: #ffffff !important;
+}
+
+.tableHeadCell {
+  border-radius: 0px !important;
+}
+
+.tableBodyText {
+  color: #808080 !important;
+}
+
+.MuiTableSortLabel-icon {
+  opacity: 0.7 !important;
+  color: white !important;
+}
+
+.tableArea {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.topScrollContainerAsssessment {
+  padding-top: 110px !important;
+  margin-top: -85px !important;
+}

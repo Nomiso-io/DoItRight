@@ -1,0 +1,9 @@
+#result-parent {
+  margin: auto;
+  width: 50%;
+  transform: translateY(25%);
+}
+
+.clearfix {
+  overflow: auto;
+}

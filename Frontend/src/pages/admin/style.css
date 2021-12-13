@@ -1,0 +1,19 @@
+/* .MuiDrawer-paper {
+    top: 50px !important;
+    height: 90% !important;
+} */
+
+.MuiListItem-root {
+  padding: 6px 16px !important;
+}
+/* .makeStyles-toolbarIcon-92 {
+    min-height: 42px !important; 
+}
+
+.makeStyles-toolbarIcon{
+    min-height: 42px !important;
+} */
+
+/* .MuiToolbar-gutters {
+    padding: 0px !important;
+} */
