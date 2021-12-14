@@ -1,8 +1,9 @@
-# AWS Lambda in TypeScript
+# Backend component of DoItRight
 
-This sample uses the [Serverless Application Framework](https://serverless.com/) to implement an AWS Lambda function in TypeScript, deploy it via CloudFormation, and publish it through API Gateway.
+The Backend component of DoItRight includes all the APIs and related database modules for the DoItRight application. It is an AWS Lambda function written in TypeScript, deployed via CloudFormation, and published through API Gateway.
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+
 [![Linux Build Status](https://travis-ci.org/balassy/aws-lambda-typescript.svg?branch=master)](https://travis-ci.org/balassy/aws-lambda-typescript)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/cuo6yvampkiids7i/branch/master?svg=true)](https://ci.appveyor.com/project/balassy/aws-lambda-typescript/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/balassy/aws-lambda-typescript/badge.svg)](https://coveralls.io/github/balassy/aws-lambda-typescript)
@@ -262,15 +263,6 @@ Contributions of all kinds are welcome, please feel free to send Pull Requests. 
 
 Thanks for your help in making this project better!
 
-## Read more
-
-* [Serverless.yml Reference](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
-
-## Acknowledments
-
-Thanks to Shovon Hasan for his article on [Deploying a TypeScript + Node AWS Lambda Function with Serverless](https://blog.shovonhasan.com/deploying-a-typescript-node-aws-lambda-function-with-serverless/).
-
-
 ## About the author
 
-This project is maintaned by [György Balássy](https://linkedin.com/in/balassy).
+This project is maintaned by NomiSo Inc(https://nomiso.io/products).
