@@ -1,9 +1,6 @@
-# Create React App example with Material-UI, TypeScript, Redux and Routing
+# Frontend for DoItRight
 
-This is a new verison with React Hooks, Material-UI 4 and React-Redux 7 (with hooks!). We use this template for all our new projects. If you want to bootstrap a project with the classic approach without hooks but with class components, you are welcome to use the [previous version](https://github.com/innFactory/create-react-app-material-typescript-redux/tree/v1).
-
-<img width="100%" src="screenshot.png" alt="example"/>
-
+Frontend has the complete UI of the DoItRight application. It is written in Typescript with React Hooks, Material-UI 4 and React-Redux 7 (with hooks!).
 Inspired by:
 
 -   [Material-UI](https://github.com/mui-org/material-ui)
@@ -88,6 +85,7 @@ This example demonstrate how you can use [Create React App](https://github.com/f
 
 ## Contributors
 
--   [Anton Spöck](https://github.com/spoeck)
+## About the author
 
-Powered by [innFactory](https://innfactory.de/)
+This project is maintaned by [NomiSo Inc.](https://nomiso.io/products).
+
