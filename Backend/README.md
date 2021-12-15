@@ -2,44 +2,6 @@
 
 The Backend component of DoItRight includes all the APIs and related database modules for the DoItRight application. It is an AWS Lambda function written in TypeScript, deployed via CloudFormation, and published through API Gateway.
 
-[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-
-[![Linux Build Status](https://travis-ci.org/balassy/aws-lambda-typescript.svg?branch=master)](https://travis-ci.org/balassy/aws-lambda-typescript)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/cuo6yvampkiids7i/branch/master?svg=true)](https://ci.appveyor.com/project/balassy/aws-lambda-typescript/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/balassy/aws-lambda-typescript/badge.svg)](https://coveralls.io/github/balassy/aws-lambda-typescript)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/balassy/aws-lambda-typescript/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/balassy/aws-lambda-typescript.svg)](https://github.com/balassy/aws-lambda-typescript/issues)
-[![Swagger Validator](https://img.shields.io/swagger/valid/2.0/https/serverless-sample.balassy.me/api/swagger.json.svg)](https://app.swaggerhub.com/apis/balassy/serverless-sample)
-
-[![Known Vulnerabilities](https://snyk.io/test/github/balassy/aws-lambda-typescript/badge.svg?targetFile=package.json)](https://snyk.io/test/github/balassy/aws-lambda-typescript?targetFile=package.json)
-[![Dependencies](https://david-dm.org/balassy/aws-lambda-typescript/status.svg)](https://david-dm.org/balassy/aws-lambda-typescript)
-[![DevDependencies](https://david-dm.org/balassy/aws-lambda-typescript/dev-status.svg)](https://david-dm.org/balassy/aws-lambda-typescript#type=dev)
-[![codebeat badge](https://codebeat.co/badges/cd3e0118-3d7f-4c0d-8d27-14d05df5a356)](https://codebeat.co/projects/github-com-balassy-aws-lambda-typescript-master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/balassy/aws-lambda-typescript.svg)](https://greenkeeper.io/)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2154/badge)](https://bestpractices.coreinfrastructure.org/projects/2154)
-
-## Features
-
-- Full **[TypeScript](https://www.typescriptlang.org/)** codebase with **strict** type annotation - _get as many compile time errors as possible._
-- **Deployment to AWS** from the command line with [Serverless](https://serverless.com/) - _just run an npm script._
-- Publishing to your **custom [Route53](https://aws.amazon.com/route53/) domain name** - _for API URLs that live forever._
-- **Automated builds and CI** with [Travis CI](https://travis-ci.org/balassy/aws-lambda-typescript) on Linux and [AppVeyor](https://ci.appveyor.com/project/balassy/aws-lambda-typescript) on Windows - _get early feedback for every change_.
-- **Offline** execution - _call your endpoints without deploying them to AWS._
-- Minimal IAM policy to follow the **principle of least privilege** - _because with great power comes great responsibility_.
-- **Code analysis** with [TSLint](https://palantir.github.io/tslint/) and [Codebeat](https://codebeat.co/projects/github-com-balassy-aws-lambda-typescript-master) - _avoid dumb coding mistakes._
-- **Unit testing** with [Mocha](https://mochajs.org/), mocking with [ts-mockito](https://github.com/NagRock/ts-mockito) - _be free to change your implementation._
-- Test **coverage report** with [Istanbul](https://istanbul.js.org/) and [Coveralls](https://coveralls.io) - _so you know your weak spots._
-- **Integration testing** after release - _to verify your deployment._
-- Generated **[Swagger](https://swagger.io/) documentation** for the endpoints, which works well with [SwaggerHub](https://app.swaggerhub.com) - _the expected description of your API._
-- Multiple layers in the code to **separate concerns** and independently test them - _avoid monolith and complexity._
-- **Health check** endpoints - _to quickly test your service._
-- **Dependency checks** and continuous update with [David](https://david-dm.org/), [Greenkeeper](https://greenkeeper.io/) and [Snyk](https://snyk.io)- _because the majority of your app is not your code._
-- **[EditorConfig](http://editorconfig.org/)** settings - _for consistent coding styles between different editors._
-- Sample CRUD implementation (in progress) - _to see it all in action_.
-- Follows Linux Foundation Core Infrastructure Initiative **[Best Practices](https://bestpractices.coreinfrastructure.org/en)** - _for the open source community._
-
-For updates, please check the [CHANGELOG](https://github.com/balassy/aws-lambda-typescript/blob/master/CHANGELOG.md).
-
 ## Setup
 
 1. **Install [Node.js](https://nodejs.org).**
@@ -82,13 +44,7 @@ serverless -v
 npm install
 ```
 
-6. **Customize the name of your service** by changing the following line in the `serverless.yml` file:
-
-```
-service: serverless-sample
-```
-
-7. **Customize the name of your domain** by changing the following lines in the `serverless.yml` file:
+6. **Customize the name of your domain** by changing the following lines in the `serverless.yml` file:
 
 ```
 custom:
@@ -120,12 +76,6 @@ Additional terms:
 - **Result**: The outcome of the service call. It can be a success result or an error result.
 
 To understand the code, open `src/cities/cities.ts`, find the `getCity` function and follow the call chain.
-
-### Swagger export
-
-The `src/swagger` folder contains the `/swagger.json` endpoint which exports the documentation of the API in [Swagger](https://swagger.io/) format. Call the endpoint after deploying your API and paste the response JSON into the [Swagger Editor](https://editor.swagger.io) to display it in a friendly way.
-
-You can also reference the `swagger.json` URL when you publish your documentation via [SwaggerHub](https://app.swaggerhub.com), as you can see on the SwaggerHub page of this sample: https://app.swaggerhub.com/apis/balassy/serverless-sample.
 
 ### Health check endpoints
 
