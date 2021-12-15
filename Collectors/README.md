@@ -3,8 +3,6 @@
 The Collectors and Scheduler are simple javascript files written using typescript and run using nodejs.
 The code also includes installers for the Collectors and Scheduler which initializes the resources needed to run them and sets them up to run as linux service.
 
-[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-
 ## Features
 
 - Full **[TypeScript](https://www.typescriptlang.org/)** codebase with **strict** type annotation - _get as many compile time errors as possible._
@@ -17,7 +15,7 @@ The code also includes installers for the Collectors and Scheduler which initial
 2. **Install typescript as a globally available package:**
 
 ```bash
-npm install �g typescript
+npm install -g typescript
 ```
 
 3. **Setup AWS credentials: **_(You will need this for the AWSCodeCommit and AWSPipeline collectors)_
@@ -99,56 +97,6 @@ Additional useful `npm script`s:
 serverless invoke local --function getCity
 ```
 
-**To run the service locally, run:** _This command requires Administrator privileges on Windows!_
-
-```bash
-npm start
-```
-
-This command will not terminate, but will keep running a webserver that you can use to locally test your service. Verify that the service runs perfectly by opening the `http://localhost:3000` URL in your browser. The console window will log your requests.
-
-You can modify your code after running this command, Serverless will automatically recognize the changes and recompile your code.
-
-### Deploy to AWS EC2
-
-**To create a custom domain for your service in AWS, run this command once:** _This command requires Administrator privileges on Windows!_
-
-```bash
-npm run deploy:init
-```
-
-According to AWS, after this command it may take up to 40 minutes to initialize the domain with a CloudFront distribution. In practice it usually takes about 10 minutes.
-
-**To deploy the service to AWS, run:** _This command requires Administrator privileges on Windows!_
-
-```bash
-serverless deploy
-```
-
-or you can use the NPM script alias, which is recommended, because it runs the analysers (linter + tests) before deployment, and integration tests after deployment:
-
-```bash
-npm run deploy
-```
-
-Verify that the deployment is completed successfully by opening the URL displayed in your console window in your browser. To see all resources created in AWS navigate to CloudFormation in the AWS Console and look for the stack named with the name of your service you specified in Step 6.
-
-**To download the Swagger description** of your service, open the following URL in your browser:
-
-```
-https://<your_custom_domain_name>/api/swagger.json
-```
-
-Note that this endpoint always downloads the Swagger documentation from the live, published API, even if the code is running locally!
-
-If you don't want to deploy your code, just want to peek into the deployment package, you can run:
-
-```bash
-npm run build
-```
-
-This command is not only an alias to `serverless package`, but also runs all analyzers that the deploy process also runs.
-
 ### Run linter
 
 **To check your codebase with TSLint, run:**
@@ -179,20 +127,20 @@ npm run test:integration
 
 The integration tests are automatically running after deployment, so you don't need to run them manually.
 
-### View the documentation
-
-To view the generated Swagger documentation, deploy your API or start it locally, and then call the `/swagger.json` endpoint.
-
-
 ## Problems?
 
+## References
 
-## Read more
+## Got feedback?
 
+Your feedback is more than welcome, please send your suggestions, feature requests or bug reports as [Github issues](https://github.com/Nomiso-io/DoItRight/issues).
 
-## Acknowledments
+## Contributing guidelines
 
+Contributions of all kinds are welcome, please feel free to send Pull Requests. As they are requirements of successful build all linters and tests MUST pass, and also please make sure you have a reasonable code coverage for new code.
 
-## Author
+Thanks for your help in making this project better!
 
-Gargi Basak for [PiNimbus LLC](https://pinimbus.com).
+## About the author
+
+This project is maintaned by [NomiSo Inc.](https://nomiso.io/products)
