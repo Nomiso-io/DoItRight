@@ -1,12 +1,8 @@
 # Frontend for DoItRight
 
 Frontend has the complete UI of the DoItRight application. It is written in Typescript with React Hooks, Material-UI 4 and React-Redux 7 (with hooks!).
-Inspired by:
 
--   [Material-UI](https://github.com/mui-org/material-ui)
--   [react-redux-typescript-boilerplate](https://github.com/rokoroku/react-redux-typescript-boilerplate)
-
-## Contains
+## Reference
 
 -   [x] [Material-UI](https://github.com/mui-org/material-ui)
 -   [x] [Typescript](https://www.typescriptlang.org/)
@@ -19,21 +15,10 @@ Inspired by:
 -   [x] [TodoMVC example](http://todomvc.com)
 -   [x] PWA Support
 
-## Roadmap
-
--   [x] Make function based components and use hooks for state etc.
--   [x] Implement [Material-UIs new styling solution](https://material-ui.com/css-in-js/basics/) based on hooks
--   [x] use react-redux hooks
--   [ ] Hot Reloading -> Waiting for official support of react-scripts
 
 ## How to use
 
 Download or clone this repo
-
-```bash
-git clone https://github.com/innFactory/create-react-app-material-typescript-redux
-cd create-react-app-material-typescript-redux
-```
 
 Install it and run:
 
@@ -67,21 +52,6 @@ registerServiceWorker();
        "source.organizeImports": true // optional
    },
 ```
-
-## Enable project snippets [OPTIONAL]
-
-Just install following extension:
-
-<img width="70%" src="vscode_snippet0.png" alt="Project Snippet"/>
-
-After that you can start to type `fcomp` (_for function component_) and you get a template for a new component.
-
-<img width="70%" src="vscode_snippet1.png" alt="Project Snippet"/>
-<img width="70%" src="vscode_snippet2.png" alt="Project Snippet"/>
-
-## The idea behind the example
-
-This example demonstrate how you can use [Create React App](https://github.com/facebookincubator/create-react-app) with [TypeScript](https://github.com/Microsoft/TypeScript).
 
 ## Contributors
 
