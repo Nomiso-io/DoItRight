@@ -205,7 +205,7 @@ On Windows you need **Administrator privileges** to run `serverless` commands (s
 
 ## Got feedback?
 
-Your feedback is more than welcome, please send your suggestions, feature requests or bug reports as [Github issues](https://github.com/balassy/aws-lambda-typescript/issues).
+Your feedback is more than welcome, please send your suggestions, feature requests or bug reports as [Github issues](https://github.com/Nomiso-io/DoItRight/issues).
 
 ## Contributing guidelines
 
@@ -215,4 +215,4 @@ Thanks for your help in making this project better!
 
 ## About the author
 
-This project is maintaned by NomiSo Inc(https://nomiso.io/products).
+This project is maintaned by [NomiSo Inc.](https://nomiso.io/products)
