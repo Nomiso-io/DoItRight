@@ -53,7 +53,15 @@ registerServiceWorker();
    },
 ```
 
-## Contributors
+## Got feedback?
+
+Your feedback is more than welcome, please send your suggestions, feature requests or bug reports as [Github issues](https://github.com/Nomiso-io/DoItRight/issues).
+
+## Contributing guidelines
+
+Contributions of all kinds are welcome, please feel free to send Pull Requests. As they are requirements of successful build all linters and tests MUST pass, and also please make sure you have a reasonable code coverage for new code.
+
+Thanks for your help in making this project better!
 
 ## About the author
 
